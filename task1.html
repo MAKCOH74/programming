@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простейшие программы</title>
+</head>
+<body>
+    <script>
+        //первая задача *найти плотность населения в государстве*
+        /*
+        let people, ploshad, chislennost;
+        people = parseInt(prompt("Введите численность населения"));
+        ploshad = parseInt(prompt("Введите площадь государства м^2"));
+        chislennost = Math.round(ploshad / people);
+        alert("Плотность населения - "+ chislennost + " чел/м^2");  
+        */
+        //вторая задача *с начала суток прошло н секунд. определить сколько полных минут прошла с начала нового часа*
+        /*
+        let sec, clock, min;
+        sec = parseInt(prompt("Введите сколько секунд прошло"));
+        min = parseInt(sec / 60);
+        clock = parseInt(min % 60);
+        alert("минут прошло с начала нового часа - "+clock);
+        */
+       // Третья задача *дано 3-х значное число, зачеркнули первую цифру и приписали её в конце* эта задача не получилачсь
+       
+       let number, d1, d2, d3;
+       number = parseInt(prompt("Введите 3-х значное число"));
+       d1 = parseFloat(number% 10);
+       d2 = parseFloat(Math.floor(number / 10)) % 10;
+       d3 = parseFloat(Math.floor(number / 100)) % 10;
+       alert(d1,d2,d3);
+    </script>
+</body>
+</html>
