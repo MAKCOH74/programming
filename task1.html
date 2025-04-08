@@ -24,13 +24,14 @@
         alert("минут прошло с начала нового часа - "+clock);
         */
        // Третья задача *дано 3-х значное число, зачеркнули первую цифру и приписали её в конце* эта задача не получилачсь
-       
-       let number, d1, d2, d3;
+
+       let number, d1, d2, d3, newnum;
        number = parseInt(prompt("Введите 3-х значное число"));
-       d1 = parseFloat(number% 10);
-       d2 = parseFloat(Math.floor(number / 10)) % 10;
-       d3 = parseFloat(Math.floor(number / 100)) % 10;
-       alert(d1,d2,d3);
+       d1 = number % 10;
+       d2 = parseFloat(Math.floor(number / 10))%10 ;
+       d3 = parseFloat(Math.floor(number / 100))%10 ;
+       newnum = d1*100+d2*10+d3;
+       alert(newnum);
     </script>
 </body>
 </html>
